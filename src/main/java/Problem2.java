@@ -7,6 +7,16 @@ public class Problem2 {
     // Do not change signature (function name, parameters and return type)
     // Do not use extra space for another array. Solution to be in-pace with O(1) extra memory
     public static int remove(int[] nums) {
-        return Integer.MAX_VALUE; // place holder
+        int amt = 0;
+        int dup;
+
+        for(int i = 0; i < nums.length - 1; i++){
+            dup = nums[i];
+            if(nums[i + 1] == dup){
+                amt++;
+            }
+
+        }
+        return amt; // place holder
     }
 }
