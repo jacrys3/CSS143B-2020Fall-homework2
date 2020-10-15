@@ -61,7 +61,7 @@ public class Problem3Test {
 
         for (int i = -5; i < 5; i++) {
             int fees = bookFiction.calcLateFees(i);
-            assertEquals(fees, Math.max(i, 0) * bookFiction.getLateFeeInDollar());
+            assertEquals(Math.max(i, 0) * bookFiction.getLateFeeInDollar(), fees);
         }
     }
 
@@ -71,7 +71,7 @@ public class Problem3Test {
 
         for (int i = -5; i < 5; i++) {
             int fees = bookRomance.calcLateFees(i);
-            assertEquals(fees, Math.max(i, 0) * bookRomance.getLateFeeInDollar());
+            assertEquals(Math.max(i, 0) * bookRomance.getLateFeeInDollar(), fees);
         }
     }
 
@@ -81,12 +81,12 @@ public class Problem3Test {
 
         for (int i = -5; i < 5; i++) {
             int fees = movieAction.calcLateFees(i);
-            assertEquals(fees, Math.max(i, 0) * movieAction.getLateFeeInDollar());
+            assertEquals(Math.max(i, 0) * movieAction.getLateFeeInDollar(), fees);
         }
 
         for (int i = 5; i <= 10; i++) {
             int fees = movieAction.calcLateFees(i);
-            assertEquals(fees, 2 * i * movieAction.getLateFeeInDollar());
+            assertEquals(2 * i * movieAction.getLateFeeInDollar(), fees);
         }
     }
 
@@ -96,7 +96,7 @@ public class Problem3Test {
 
         for (int i = -5; i < 10; i++) {
             int fees = movieComedy.calcLateFees(i);
-            assertEquals(fees, Math.max(i, 0) * movieComedy.getLateFeeInDollar());
+            assertEquals(Math.max(i, 0) * movieComedy.getLateFeeInDollar(), fees);
         }
     }
 
