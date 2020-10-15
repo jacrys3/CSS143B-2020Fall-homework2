@@ -22,7 +22,7 @@ public abstract class Book implements StoreMediaOperations {
 
     @Override
     public boolean equals(Object obj) {
-        //homework
-        return false;
+        Book book = (Book) obj;
+        return this.title == book.title && this.author == book.author && this.id == book.id;
     }
 }

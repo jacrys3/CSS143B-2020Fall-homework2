@@ -8,6 +8,7 @@ public class BookFiction extends Book {
 
     public BookFiction(String title, String author, String genres) {
         super(title, author);
+        this.genres = genres;
     }
 
     // copy constructor
